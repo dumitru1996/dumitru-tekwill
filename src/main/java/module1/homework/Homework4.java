@@ -135,21 +135,14 @@ public class Homework4 {
     }
 
     public static void main(String[] args) {
-//        fourNumbers();
-//        squirrelAndNuts();
-//        sumOfDigits();
-//        snail();
-//        distance();
-//        differenceBetweenTwoDoubles();
-//        checkTheValue();
-//        numbersAreDifferent();
+        fourNumbers();
+        squirrelAndNuts();
+        sumOfDigits();
+        snail();
+        distance();
+        differenceBetweenTwoDoubles();
+        checkTheValue();
+        numbersAreDifferent();
         exactlyOnePositive();
-
-
-        //Exercice2
-
-
-
-
     }
 }
