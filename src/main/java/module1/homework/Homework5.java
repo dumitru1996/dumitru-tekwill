@@ -33,7 +33,7 @@ public class Homework5 {
     else
             return false;
     }
-//    Exercise2
+
     public static void theArmyOfUnits(){
         System.out.println("2. The army of units (medium)");
 
@@ -184,6 +184,21 @@ public class Homework5 {
         System.out.println(prod);
     }
 
+//    Exercise9
+    public static void sequence(){
+        System.out.println("8. The length of the sequence (medium)");
+
+        int a = 0;
+        int count = 0;
+
+        do {
+            a =scanner.nextInt();
+            if(a!=0){
+                count++;
+            }
+        } while (a != 0);
+        System.out.println(count);
+    }
 
     public static void main(String[] args) {
         healthySleep();
@@ -194,6 +209,7 @@ public class Homework5 {
         direction();
         fizzBuzz();
         product();
+        sequence();
 
     }
 }
