@@ -22,8 +22,8 @@ public class Homework7 {
         System.out.println("2.Check burgs (medium)");
         System.out.print("Write a city name: ");
         String cityName = scanner.nextLine();
-        Boolean containsBurg = cityName.contains("burg");
-
+        String subBurg  = cityName.trim().toLowerCase().substring(cityName.length()-4,cityName.length());
+        boolean containsBurg = subBurg.equals("burg");
         System.out.println(containsBurg);
     }
 
@@ -34,13 +34,8 @@ public class Homework7 {
         String a = scanner.nextLine();
         System.out.print("String B: ");
         String b = scanner.nextLine();
-        boolean isEqual = false;
-
-        if(a.trim().replace(" ", "").equals(b.trim().replace(" ", ""))){
-            isEqual = true;
-        } else {
-            isEqual = false;
-        }
+        boolean isEqual = a.trim().replace(" ", "")
+                .equals(b.trim().replace(" ", ""));
 
         System.out.println(isEqual);
     }
@@ -60,17 +55,12 @@ public class Homework7 {
         System.out.println("5.Number of occurrences (medium)");
         System.out.print("Input your string: ");
         String inputText = scanner.nextLine();
+        inputText.toLowerCase();
         System.out.print("Input occurrence: ");
         String occurrence = scanner.nextLine();
 
-        int occurrenceTimes = 0;
-        String[] textArray = inputText.trim().split(" ");
-
-        for (int i = 0; i < textArray.length; i++) {
-            if (textArray[i].contains(occurrence)){
-                occurrenceTimes++;
-            }
-        }
+        int occurrenceTimes = (inputText.length() -
+                inputText.replace(occurrence,"").length()) /occurrence.length();
 
         System.out.println(occurrenceTimes);
     }
@@ -89,14 +79,12 @@ public class Homework7 {
                 sameCharGroup++;
             }
             else {
-                System.out.print(temp);
-                System.out.print(sameCharGroup);
+                System.out.print(temp + sameCharGroup);
                 sameCharGroup = 1;
                 temp = dna.charAt(i);
             }
         }
-        System.out.print(temp);
-        System.out.print(sameCharGroup);
+        System.out.print(temp + sameCharGroup);
     }
 
     public static void main(String args[]){
