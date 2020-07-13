@@ -6,6 +6,7 @@ public class Homework7 {
 
     static Scanner scanner = new Scanner(System.in);
 
+//    Exercise1
     public static void replaceAWithB(){
         System.out.println("1.Replacing 'a' with 'b' (medium)");
         System.out.print("Write some text: ");
@@ -16,6 +17,7 @@ public class Homework7 {
         System.out.println(output);
     }
 
+//    Exercise2
     public static void containsBurg(){
         System.out.println("2.Check burgs (medium)");
         System.out.print("Write a city name: ");
@@ -25,6 +27,7 @@ public class Homework7 {
         System.out.println(containsBurg);
     }
 
+//    Exercise3
     public static void stringCompare(){
         System.out.println("3.Comparing strings ignoring whitespaces (hard)");
         System.out.print("String A: ");
@@ -42,6 +45,7 @@ public class Homework7 {
         System.out.println(isEqual);
     }
 
+//    Exercise4
     public static void convertDate(){
         System.out.println("4.Convert a date (medium)");
         System.out.print("Input date (YYYY-MM-DD): ");
@@ -51,6 +55,7 @@ public class Homework7 {
         System.out.println(formatedDate[1] + "/" + formatedDate[2] + "/" + formatedDate[0]);
     }
 
+//    Exercise5
     public static void numberOfOccurrence(){
         System.out.println("5.Number of occurrences (medium)");
         System.out.print("Input your string: ");
@@ -70,28 +75,28 @@ public class Homework7 {
         System.out.println(occurrenceTimes);
     }
 
-//    Unfinished - cannot concat the las value
+//    Exercise6
     public static void comparisonAlgorithm() {
         System.out.println("6.Compression algorithm (hard)");
         System.out.print("Introduce DNA code: ");
 
         String dna = scanner.nextLine();
-        int sameCharGroup = 1;
-        char temp;
-        String convertedDNA = "";
+        int sameCharGroup = 0;
+        char temp = dna.charAt(0);
 
-        for (int i = 0; i < dna.length() - 1; i++) {
-            temp = dna.charAt(i);
-            if (temp == dna.charAt(i+1)){
+        for (int i = 0; i < dna.length(); i++) {
+            if (dna.charAt(i) == temp){
                 sameCharGroup++;
             }
             else {
-                convertedDNA+= temp + "" + sameCharGroup;
+                System.out.print(temp);
+                System.out.print(sameCharGroup);
                 sameCharGroup = 1;
+                temp = dna.charAt(i);
             }
         }
-
-        System.out.print(convertedDNA);
+        System.out.print(temp);
+        System.out.print(sameCharGroup);
     }
 
     public static void main(String args[]){
@@ -101,8 +106,5 @@ public class Homework7 {
         convertDate();
         numberOfOccurrence();
         comparisonAlgorithm();
-
-
-
     }
 }
