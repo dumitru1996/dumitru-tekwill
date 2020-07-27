@@ -81,90 +81,73 @@ public class Homework8 {
         array[index] += value;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
     public static void main(String args[]){
 
 //        Ex1
-//        System.out.print("1. Integer part of a number (medium)\n input double: ");
-//        double d = scanner.nextDouble();
-//        System.out.println(extractInt(d));
+        System.out.print("1. Integer part of a number (medium)\n input double: ");
+        double d = scanner.nextDouble();
+        System.out.println(extractInt(d));
 
 //        Ex2
-//        System.out.println("2. Vowel or not (medium)\ninput char: ");
-//        char letter = scanner.nextLine().charAt(0);
-//        System.out.println(isVowel(letter) ? "YES" : "NO");
+        System.out.println("2. Vowel or not (medium)\ninput char: ");
+        char letter = scanner.nextLine().charAt(0);
+        System.out.println(isVowel(letter) ? "YES" : "NO");
 
 //        Ex3
-//        System.out.println("2. Vowel or not (medium)\ninput number: ");
-//        long n = Integer.parseInt(scanner.nextLine().trim());
-//        System.out.println(factorial(n));
+        System.out.println("2. Vowel or not (medium)\ninput number: ");
+        long n = Integer.parseInt(scanner.nextLine().trim());
+        System.out.println(factorial(n));
 
 //        Ex4
-//        System.out.println("Hello, Java!");
+        System.out.println("Hello, Java!");
 
 //        Ex5
-//        System.out.println("We are robots!");
+        System.out.println("We are robots!");
 
 //        Ex6
-//        System.out.println("6.Overloading methods (hard)\nEnter type: ");
-//        final String type = scanner.nextLine();
-//        switch (type.trim().toLowerCase()){
-//            case "long":
-//                System.out.print("Enter "+ type + " value: ");
-//                final long longVal = Long.parseLong(scanner.nextLine());
-//                final long longResult = getMaxMinusCurrent(longVal);
-//                System.out.println(longResult);
-//                break;
-//            case "int":
-//                System.out.print("Enter "+ type + " value: ");
-//                final int intVal = Integer.parseInt(scanner.nextLine());
-//                final int intResult = getMaxMinusCurrent(intVal);
-//                System.out.println(intResult);
-//                break;
-//            case "short":
-//                System.out.print("Enter "+ type + " value: ");
-//                final short shortVal = Short.parseShort(scanner.nextLine());
-//                final short shortResult = getMaxMinusCurrent(shortVal);
-//                System.out.println(shortResult);
-//                break;
-//            default:
-//                System.out.println("Unknown type found");
-//                break;
-//        }
+        System.out.println("6.Overloading methods (hard)\nEnter type: ");
+        final String type = scanner.nextLine();
+        switch (type.trim().toLowerCase()){
+            case "long":
+                System.out.print("Enter "+ type + " value: ");
+                final long longVal = Long.parseLong(scanner.nextLine());
+                final long longResult = getMaxMinusCurrent(longVal);
+                System.out.println(longResult);
+                break;
+            case "int":
+                System.out.print("Enter "+ type + " value: ");
+                final int intVal = Integer.parseInt(scanner.nextLine());
+                final int intResult = getMaxMinusCurrent(intVal);
+                System.out.println(intResult);
+                break;
+            case "short":
+                System.out.print("Enter "+ type + " value: ");
+                final short shortVal = Short.parseShort(scanner.nextLine());
+                final short shortResult = getMaxMinusCurrent(shortVal);
+                System.out.println(shortResult);
+                break;
+            default:
+                System.out.println("Unknown type found");
+                break;
+        }
 
 //        Ex7
-//        System.out.println("7.Sorting numbers (medium)");
-//        String[] values = scanner.nextLine().split("\\s+");
-//        int[] numbers = Arrays.stream(values).mapToInt(Integer::parseInt).toArray();
-//        sort(numbers);
-//        Arrays.stream(numbers).forEach(e -> System.out.print(e + " "));
+        System.out.println("7.Sorting numbers (medium)");
+        String[] values = scanner.nextLine().split("\\s+");
+        int[] numbers = Arrays.stream(values).mapToInt(Integer::parseInt).toArray();
+        sort(numbers);
+        Arrays.stream(numbers).forEach(e -> System.out.print(e + " "));
 
 //        Ex8
-//        System.out.println("8.Adding values (medium)");
-//        System.out.print("Enter array: ");
-//        long[] array = Arrays.stream(scanner.nextLine().split(" "))
-//                .mapToLong(Long::parseLong).toArray();
-//        System.out.println("Enter index: ");
-//        int index = scanner.nextInt();
-//        System.out.println("Enter adding value: ");
-//        long value = scanner.nextLong();
-//        addValueByIndex(array, index, value);
-//        Arrays.stream(array).forEach(e ->System.out.print(e + " "));
-
-
-
-
-
+        System.out.println("8.Adding values (medium)");
+        System.out.print("Enter array: ");
+        long[] array = Arrays.stream(scanner.nextLine().split(" "))
+                .mapToLong(Long::parseLong).toArray();
+        System.out.println("Enter index: ");
+        int index = scanner.nextInt();
+        System.out.println("Enter adding value: ");
+        long value = scanner.nextLong();
+        addValueByIndex(array, index, value);
+        Arrays.stream(array).forEach(e ->System.out.print(e + " "));
     }
 }
