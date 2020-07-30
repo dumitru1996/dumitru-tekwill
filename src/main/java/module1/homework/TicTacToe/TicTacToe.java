@@ -1,4 +1,4 @@
-package module1.homework;
+package module1.homework.TicTacToe;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package module1.homework;
+package module1.homework.Homework1_8;
 
 public class Homework1 {
 

@@ -1,4 +1,4 @@
-package module1.homework.Homework9_10;
+package module1.homework.Homework9;
 
 public class User {
     private String login, firstName, lastName;
